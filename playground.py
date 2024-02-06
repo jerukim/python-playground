@@ -1,5 +1,6 @@
 import sys
 from module import my_function, greeter
+import package.subpackage1
 
 if len(sys.argv) == 2:
     name = sys.argv[1]
