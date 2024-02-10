@@ -7,3 +7,25 @@ try:
     print(iterator.__next__())
 except StopIteration as e:
     print('naur more items', e)
+
+
+mystring = 'abc'
+for letter in mystring:
+    print(letter)
+
+mylist = ['a', 'b', 'c']
+for letter in mystring:
+    print(letter)
+
+print([x for x in 'abc'])
+print([x for x in [1, 2, 3, 4] if x > 2])
+
+d = {'name': 'Alice', 'age': 23, 'country': 'NL'}
+for key in d:
+    print(key)
+
+for val in d.values():
+    print(val)
+
+for key, val in d.items():
+    print(key, val)
