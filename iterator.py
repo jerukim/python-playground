@@ -30,4 +30,12 @@ for val in d.values():
 for key, val in d.items():
     print(key, val)
 
-print([f'{k}: {v}'] for k, v in d.items())
+print([f'{k}: {v}' for k, v in d.items()])
+
+# converting iterators
+l = list(range(1, 4))
+print(l)
+s = set(range(1, 4))
+print(s)
+t = tuple(range(1, 4))
+print(t)
