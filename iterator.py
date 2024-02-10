@@ -29,3 +29,5 @@ for val in d.values():
 
 for key, val in d.items():
     print(key, val)
+
+print([f'{k}: {v}'] for k, v in d.items())
