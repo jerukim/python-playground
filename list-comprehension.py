@@ -28,3 +28,8 @@ n = [value
      for sublist in m
      for value in sublist]
 print(n)
+
+
+# set comprehensions
+s = {s for s in range(1, 5) if s % 2}
+print(s)
