@@ -33,3 +33,8 @@ print(n)
 # set comprehensions
 s = {s for s in range(1, 5) if s % 2}
 print(s)
+
+
+# dictionary comprehensions
+d = {x: x**2 for x in (2, 4, 6)}
+print(d)
