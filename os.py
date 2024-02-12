@@ -65,3 +65,7 @@ if os.path.isfile('myfile.txt'):
 
 if os.path.isfile('nothere.txt'):
     print('the file exists')
+
+# check if directory exists
+if os.path.isdir('mydir'):
+    print('the directory exists')
