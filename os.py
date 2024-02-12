@@ -39,3 +39,13 @@ with open('myfile.txt', 'a') as f:
         f.write(f'Append number {i}\n')
 
 printFile('myfile.txt')
+
+
+# read file to list
+with open('myfile.txt') as f:
+    lines = list(f)
+    print(lines)
+# or
+with open('myfile.txt') as f:
+    lines = f.readlines()
+    print(lines)
