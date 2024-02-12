@@ -49,3 +49,9 @@ with open('myfile.txt') as f:
 with open('myfile.txt') as f:
     lines = f.readlines()
     print(lines)
+
+
+# read file as iterator
+with open('myfile.txt', 'r') as f:
+    for line in f:
+        print(line)
