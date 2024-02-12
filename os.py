@@ -1,5 +1,8 @@
 import os
 
+# create file
+open('myfile.txt', 'x').close()
+
 # unsafe approach
 f = open('myfile.txt')
 print(f.read())
@@ -75,3 +78,10 @@ except FileExistsError as e:
 # check if directory exists
 if os.path.isdir('mydir'):
     print('the directory exists')
+
+# delete file
+# os.remove('myfile.txt')
+
+
+# rename file
+os.rename('myfile.txt', 'renamed.txt')
