@@ -1,3 +1,5 @@
+import os
+
 # unsafe approach
 f = open('myfile.txt')
 print(f.read())
@@ -55,3 +57,11 @@ with open('myfile.txt') as f:
 with open('myfile.txt', 'r') as f:
     for line in f:
         print(line)
+
+
+# check if file exists
+if os.path.isfile('myfile.txt'):
+    print('the file exists')
+
+if os.path.isfile('nothere.txt'):
+    print('the file exists')
