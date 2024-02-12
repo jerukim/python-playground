@@ -85,3 +85,7 @@ if os.path.isdir('mydir'):
 
 # rename file
 os.rename('myfile.txt', 'renamed.txt')
+
+
+# move file
+os.rename('renamed.txt', './mydir/myfile.txt')
